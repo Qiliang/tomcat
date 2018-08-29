@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
-<%
-out.print("来呀，你不是要测吗？");
-%> 
+<%@ page contentType="application/json;charset=UTF-8" %>
+<%@ page import="java.time.*,java.io.*,java.util.*" %>
+<%                                                                                               
+out.print("{\"name\":\""+request.getParameter("name")+"\",\"time\":\""+LocalDateTime.now()+"\"}")
+%>
